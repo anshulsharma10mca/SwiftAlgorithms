@@ -2,7 +2,7 @@
 //  ArrayQuestion1.swift
 //  SwiftAlgorithms
 //
-//  Created by iOSDeveloperIndia on 07/03/18.
+//  Created by Anshul Sharma on 07/03/18.
 //  Copyright © 2018 AnshulSharma. All rights reserved.
 //
 

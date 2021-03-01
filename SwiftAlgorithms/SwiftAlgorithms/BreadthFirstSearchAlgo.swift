@@ -2,7 +2,7 @@
 //  BreadthFirstSearchAlgo.swift
 //  SwiftAlgorithms
 //
-//  Created by iOSDeveloperIndia on 07/03/18.
+//  Created by Anshul Sharma on 07/03/18.
 //  Copyright © 2018 AnshulSharma. All rights reserved.
 //
 
@@ -83,6 +83,10 @@ extension Vertex: Hashable {
     static public func ==(lhs: Vertex<T>, rhs: Vertex<T>) -> Bool {
         return lhs.data == rhs.data
     }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine("\(data)".hashValue)
+    }
 }
 
 public enum EdgeType {
@@ -102,6 +106,10 @@ extension Edge: Hashable {
     
     public static func ==(lhs: Edge, rhs: Edge) ->  Bool {
         return lhs.source == rhs.source && lhs.destination == rhs.destination && lhs.weight == rhs.weight
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine("\(source) \(destination) \(weight)".hashValue)
     }
 }
 

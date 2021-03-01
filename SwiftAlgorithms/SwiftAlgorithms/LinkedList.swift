@@ -2,7 +2,7 @@
 //  LinkedList.swift
 //  SwiftAlgorithms
 //
-//  Created by iOSDeveloperIndia on 05/03/18.
+//  Created by Anshul Sharma on 05/03/18.
 //  Copyright © 2018 AnshulSharma. All rights reserved.
 //
 
